@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: boardgame
-          image: senthilkumar03/mynewrepo:900
+          image: arunagri03/boardgame
           imagePullPolicy: Always
           ports:
             - containerPort: 8080 
