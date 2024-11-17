@@ -17,7 +17,7 @@ spec:
           image: arunagri03/boardgame
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080 
+            - containerPort: 8090
             
 ---
 apiVersion: v1 
@@ -29,6 +29,6 @@ spec:
     app: boardgame
   ports:
     - protocol: "TCP"
-      port: 8080
-      targetPort: 8080 
+      port: 8090
+      targetPort: 8090
   type: LoadBalancer 
