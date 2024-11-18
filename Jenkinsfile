@@ -84,7 +84,7 @@ pipeline {
         stage('Docker Image Push') {
             steps {
                 script {
-                    withDockerRegistry(credentialsId: 'docker_token') {
+                    withDockerRegistry(credentialsId: 'docker-token') {
                         sh 'docker push $IMAGE_TAG'
                     }
                 }
